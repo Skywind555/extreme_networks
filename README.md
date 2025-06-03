@@ -1,7 +1,7 @@
 # Setup
 
 1. Set up GCP project
-2. Create three datasets: 1. sales 2. source 3. seeds
+2. Create three datasets: 1. sales 2. source 3. seeds and a gcs bucket
 3. Create json service account key
 4. Replace .env variables with your own names
 
