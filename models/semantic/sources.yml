@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: seeds
+    database: "{{ env_var('GCP_PROJECT') }}"
+    schema: "{{ env_var('BQ_DATASET_SEEDS') }}"
+    tables:
+      - name: revenue_forecast

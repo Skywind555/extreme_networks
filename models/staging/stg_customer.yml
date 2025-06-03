@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_customer
+    description: ""
+    columns:
+      - name: source_id
+        data_type: INT64
+      - name: company_name
+        data_type: STRING
+      - name: territory
+        data_type: STRING
+      - name: create_date
+        data_type: DATE
+      - name: update_date
+        data_type: DATE
+      - name: version
+        data_type: INT64

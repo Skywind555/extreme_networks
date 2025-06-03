@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: fact_revenue
+    description: ""
+    columns:
+      - name: source_id
+        data_type: INT64
+      - name: date
+        data_type: DATE
+      - name: revenue
+        data_type: FLOAT64

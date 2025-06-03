@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: ""
+    columns:
+      - name: source_id
+        data_type: INT64
+      - name: start_date
+        data_type: DATE
+      - name: company_name
+        data_type: STRING
+      - name: territory
+        data_type: STRING
+      - name: end_date
+        data_type: DATE

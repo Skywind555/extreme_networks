@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: dim_date
+    description: ""
+    columns:
+      - name: date
+        data_type: DATE
+      - name: year
+        data_type: INT64
+      - name: quarter
+        data_type: STRING

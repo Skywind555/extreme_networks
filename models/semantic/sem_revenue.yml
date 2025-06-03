@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: sem_revenue
+    description: ""
+    columns:
+      - name: date
+        data_type: DATE
+      - name: year
+        data_type: INT64
+      - name: quarter
+        data_type: STRING
+      - name: source_id
+        data_type: INT64
+      - name: company_name
+        data_type: STRING
+      - name: territory
+        data_type: STRING
+      - name: actual_revenue
+        data_type: FLOAT64
+      - name: forecast_revenue
+        data_type: INT64
+      - name: revenue_difference
+        data_type: FLOAT64

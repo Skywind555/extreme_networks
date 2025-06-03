@@ -1,0 +1,39 @@
+name: 'extreme_networks'
+version: '1.0.0'
+require-dbt-version: [">=1.8.4", "<=1.9.6"]
+
+profile: 'case_study'
+
+model-paths: ["models"]
+
+target-path: "target"
+log-path: "logs"
+
+models:
+  extreme_networks:
+    +tags: ['sales']
+    staging:
+      +tags: ['staging']
+      materialized: view
+    dimensional:
+      +tags: ['dimensional']
+      materialized: table
+    semantic:
+      +tags: ['semantic']
+      materialized: table
+    reporting:
+      +tags: ['reporting']
+      materialized: table
+
+seeds:
+  extreme_networks:
+    date_spine:
+      column_types:
+        date: date
+        year: int64
+        quarter: string
+    revenue_forecast:
+      column_types:
+        source_id: int64
+        date: date
+        revenue: float64
